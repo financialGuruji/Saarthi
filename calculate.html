@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Calculator</title>
-    <link rel="icon" type="image/png" href="logo.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -94,7 +93,7 @@
 
             // Show toggle options if input doesn't perfectly divide
             const toggleGroup = document.getElementById('toggleOptions');
-            if (lowerIds * idCost * 92 !== inrInput && lowerIds > 0) {
+            if (lowerIds * idCost * 90 !== inrInput && lowerIds > 0) {
                 toggleGroup.classList.remove('hidden');
                 document.getElementById('lowerInr').textContent = lowerInr.toFixed(2);
                 document.getElementById('higherInr').textContent = higherInr.toFixed(2);
